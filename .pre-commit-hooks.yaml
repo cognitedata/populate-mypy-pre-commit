@@ -1,0 +1,6 @@
+- id: populate-mypy-pre-commit
+  name: populate-mypy-pre-commit
+  entry: populate-mypy-pre-commit
+  always_run: true
+  language: python
+  files: ^pyproject.toml$

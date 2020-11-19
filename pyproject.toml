@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "populate-mypy-pre-commit"
+version = "0.1.0"
+description = "Populate additional-dependencies for the mypy pre commit hook"
+authors = []
+
+[tool.poetry.dependencies]
+python = "^3.8"
+PyYAML = "^5.3.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+populate-mypy-pre-commit = 'populate_mypy_pre_commit.main:main'
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
